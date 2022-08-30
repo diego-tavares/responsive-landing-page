@@ -1,2 +1,1 @@
-# responsive-landing-page
- 
+Estruturação de uma landing page de tortas, utilizando somente html e css para boa visualização.
