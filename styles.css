@@ -16,15 +16,13 @@ header {
 
 body {
     background-image:linear-gradient(#0e5900, #25020f);
-}
-
-a {
-    position: relative;
+    background-repeat: no-repeat;
 }
 
 .torta {
 position: absolute;
 }
+
 .torta__chocolate {
     max-width: 380px;
     width: 100%;
@@ -57,4 +55,5 @@ ul li {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10%;
+    font-size: clamp(12px, 3vw, 20px);
 }
