@@ -12,6 +12,7 @@
 
 header {
     font-family: 'Dancing Script', cursive;
+    font-size: clamp(14px, 3vw, 35px);
 }
 
 body {
