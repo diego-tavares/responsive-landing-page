@@ -16,8 +16,12 @@ header {
 }
 
 body {
-    background-image:linear-gradient(#fefefe, #25020f);
-    max-width: 100vh;
+    text-align: center;
+    background: linear-gradient(#7fffd4, #fefefe);
+    min-height: 100vh;
+    height: 100%;
+    background-repeat: no-repeat;
+    
 }
 
 #carousel-container {
@@ -25,8 +29,7 @@ body {
 	height: 332px;
 	position: relative;
 	margin: 50px auto 0;
-  /* border: 10px solid #000; */
-  border-radius: 10px;
+
 }
 
 #carousel-container > div:first-child {
@@ -63,7 +66,7 @@ body {
 
 #controls{
 	position: absolute;
-  width: 620px;
+    width: 620px;
 	top: calc( 50% - 25px);
 	margin: 0 -60px;
 }
@@ -90,11 +93,6 @@ body {
 position: absolute;
 }
 
-.torta__chocolate {
-    max-width: 380px;
-    width: 100%;
-    
-}
 
 .torta__maracuja {
     max-width: 380px;
@@ -115,7 +113,7 @@ position: absolute;
 }
 
 
-ul li {
+/* ul li {
     color: var(--branco-letras);
     text-align: center;
     display: flex;
@@ -123,4 +121,4 @@ ul li {
     justify-content: center;
     gap: 10%;
     font-size: clamp(12px, 3vw, 20px);
-}
+} */
