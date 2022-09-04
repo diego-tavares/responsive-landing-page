@@ -113,7 +113,7 @@ position: absolute;
 }
 
 
-/* ul li {
+.footer {
     color: var(--branco-letras);
     text-align: center;
     display: flex;
@@ -121,4 +121,5 @@ position: absolute;
     justify-content: center;
     gap: 10%;
     font-size: clamp(12px, 3vw, 20px);
-} */
+    text-decoration: none;
+}
