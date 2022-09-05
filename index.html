@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
     <title>Tortas</title>
 </head>
 <body>
@@ -16,31 +17,39 @@
     </header>
 
     <main>
-        <div class="tortas">
-            <section class="first__section">
-                <a href="torta-chocolate.html"><img class="torta__chocolate" src="img/torta-chocolate.jpg"></a>
-            </section>
-            
-            <section class="second__section">
-                <a href="torta-maracuja.html"><img class="torta__maracuja" src="img/torta-maracuja.jpg"></a>
-            </section>
-            
-            <section class="third__section">
-                <a href="torta-morango.html"><img class="torta__morango" src="img/torta-morango.jpg"></a>
-            </section>
-
-            <section class="fourth__section">
-                <a href="torta-limao.html"><img class="torta__limao" src="img/torta-limao.jpg"></a>
-            </section>
+        <div id="carousel-container">
+            <div>
+                <ul id="carousel" class="animate">
+                    <li class="slide animate">
+                        <a href="torta-chocolate.html"><img src="img/torta-chocolate.jpg"/></a>
+                    </li>
+                    <li class="slide animate">
+                        <img src="img/torta-limao.jpg"/>
+                    </li> 
+                    <li class="slide animate">
+                        <img src="img/torta-maracuja.jpg"/>
+                    </li>
+                    <li class="slide animate">
+                        <img src="img/torta-morango.jpg"/>
+                    </li>
+                    <li class="slide animate">
+                        <img src="img/torta-maca.jpg"/>
+                    </li>
+                </ul> 
+            </div>
+            <div id="controls">
+                <span id="prev"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/prev.png"></span>
+                <span id="next"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/next.png"></span>
+            </div>
         </div>
     </main>
-    <footer>
-        <p>Todos os direitos reservados</p>
-        <ul>
+    <footer class="footer-container">
+        <ul class="footer">
             <li>Contato</li>
             <li>Comentários</li>
             <li>Redes Sociais</li>
         </ul>
+        <p class="copyright">Todos os direitos reservados</p>
     </footer>
 </body>
 </html>

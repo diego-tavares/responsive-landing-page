@@ -16,19 +16,84 @@ header {
 }
 
 body {
-    background-image:linear-gradient(#0e5900, #25020f);
-    max-width: 100vh;
+    text-align: center;
+    background: linear-gradient(#7fffd4, #fefefe);
+    min-height: 100vh;
+    height: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+#carousel-container {
+	width: 500px;
+	height: 332px;
+	position: relative;
+	margin: 50px auto 0;
+    padding-top: 5%;
+
+}
+
+#carousel-container > div:first-child {
+	overflow: hidden;
+	max-width: 100%;
+	margin: 0;
+}
+
+#carousel {
+	position: relative;
+	width: 5000px;
+	height: 332px;
+    padding: 0;
+    margin: 0;
+}
+
+.animate{
+	-webkit-transition-duration: .5s;
+  -moz-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+
+.slide {
+  list-style: none;
+	position: relative;
+	float: left;
+	transform: translateX(-500px)
+}
+
+#controls{
+	position: absolute;
+    width: 620px;
+	top: calc( 75% - 25px);
+	margin: 0 -65px;
+}
+
+#controls span {
+	width: 50px;
+	cursor: pointer;
+	opacity: 0.4;
+}
+
+#controls span:hover {
+	opacity: 1;
+}
+
+#prev {
+	float: left;
+}
+
+#next {
+	float: right;
 }
 
 .torta {
 position: absolute;
 }
 
-.torta__chocolate {
-    max-width: 380px;
-    width: 100%;
-    
-}
 
 .torta__maracuja {
     max-width: 380px;
@@ -48,13 +113,18 @@ position: absolute;
     
 }
 
+.footer-container{
+    padding-top: 15%
+}
 
-ul li {
-    color: var(--branco-letras);
+.footer {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10%;
     font-size: clamp(12px, 3vw, 20px);
+    text-decoration: none;
+    list-style-type: none;
+    
 }
