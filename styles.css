@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 header {
@@ -17,12 +18,13 @@ header {
 
 body {
     text-align: center;
-    background: linear-gradient(#7fffd4, #fefefe);
+    background: linear-gradient(#916146, #fefefe);
     min-height: 100vh;
     height: 100%;
     background-repeat: no-repeat;
     
 }
+
 
 #carousel-container {
 	width: 500px;
@@ -118,6 +120,7 @@ position: absolute;
 }
 
 .footer {
+    color: black;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -127,4 +130,23 @@ position: absolute;
     text-decoration: none;
     list-style-type: none;
     
+}
+
+.footer:hover {
+    color:red;
+}
+
+.copyright {
+    padding-top: 5%;
+}
+
+#chocolate {
+    background: "linear-gradient(#7fffd4, #fefefe)"
+}
+
+.bg {
+    -webkit-transition-duration: 1.5s;
+    -moz-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
+    transition-duration: 1.5s;
 }

@@ -1,3 +1,19 @@
+function changeChocolate () {  
+    document.body.style.background = "linear-gradient(#916146, #fefefe)";
+ }
+function changeLimao () {
+ document.body.style.background = "linear-gradient(#7fffd4, #fefefe)";
+}
+function changeMaracuja () {
+    document.body.style.background = "linear-gradient(#e7f20c, #fefefe)";
+}
+function changeMorango () {
+    document.body.style.background = "linear-gradient(#e32817, #fefefe)";
+}
+function changeMaca () {
+    document.body.style.background = "linear-gradient(#a37d2c, #fefefe)";
+}
+
 var index = 0,
     amount = 0,
     currTransl = [],
@@ -55,7 +71,25 @@ function prev()
         outerSlide.style.transform = 'translateX('+(currTransl[outerIndex]-(moveOffset*amount))+'px)';
         outerSlide.style.opacity = '0';
         currTransl[outerIndex] = currTransl[outerIndex]-moveOffset*(amount);
+        
     }
+    if (index===0 || index===5) {
+        changeChocolate();
+    }
+    if (index===1 || index===6) {
+        changeLimao();
+    }
+    if (index===2 || index===7) {
+        changeMaracuja();
+    }
+    if (index===3 || index===8) {
+        changeMorango();
+    }
+    if (index===4 || index===9) {
+        changeMaca();
+    }
+  
+    
 }
 
 function next()
@@ -71,10 +105,28 @@ function next()
             slide.style.opacity = '1';    
             slide.style.transform = 'translateX('+(currTransl[i]-moveOffset)+'px)';
             currTransl[i] = currTransl[i]-moveOffset;
+            
         }
         var outerSlide = document.getElementsByClassName("slide")[outerIndex];
         outerSlide.style.transform = 'translateX('+(currTransl[outerIndex]+(moveOffset*amount))+'px)';
         outerSlide.style.opacity = '0';
         currTransl[outerIndex] = currTransl[outerIndex]+moveOffset*(amount);
+        
     }
+    if (index===0 || index===5) {
+        changeChocolate();
+    }
+    if (index===1 || index===6) {
+        changeLimao();
+    }
+    if (index===2 || index===7) {
+        changeMaracuja();
+    }
+    if (index===3 || index===8) {
+        changeMorango();
+    }
+    if (index===4 || index===9) {
+        changeMaca();
+    }
+  
 }
