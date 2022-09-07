@@ -74,13 +74,13 @@ function prev()
         
     }
     if (index===0 || index===5) {
-        changeChocolate();
-    }
-    if (index===1 || index===6) {
         changeLimao();
     }
-    if (index===2 || index===7) {
+    if (index===1 || index===6) {
         changeMaracuja();
+    }
+    if (index===2 || index===7) {
+        changeChocolate();
     }
     if (index===3 || index===8) {
         changeMorango();
@@ -114,13 +114,13 @@ function next()
         
     }
     if (index===0 || index===5) {
-        changeChocolate();
-    }
-    if (index===1 || index===6) {
         changeLimao();
     }
-    if (index===2 || index===7) {
+    if (index===1 || index===6) {
         changeMaracuja();
+    }
+    if (index===2 || index===7) {
+        changeChocolate();
     }
     if (index===3 || index===8) {
         changeMorango();
