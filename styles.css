@@ -139,3 +139,15 @@ position: absolute;
 .footer__img {
     width: 30%;
 }
+
+/* Páginas unitárias */
+
+.receita-principal {
+    font-size: clamp(14px, 3vw, 18px);
+}
+
+.text__bolder {
+    font-weight: 900;
+    padding: 0.3%;
+    font-size: clamp(16px, 4vw, 20px);
+}
