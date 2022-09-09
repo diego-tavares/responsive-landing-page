@@ -143,6 +143,10 @@ position: absolute;
 
 /* Páginas unitárias */
 
+.torta {
+    width: 100%;
+}
+
 .receita-principal {
     font-size: clamp(14px, 3vw, 18px);
 }
@@ -150,22 +154,25 @@ position: absolute;
 .text__bolder {
     font-weight: 900;
     padding: 1% 0;
-    margin
-    
-    font-size: clamp(16px, 4vw, 20px);
+    font-size: clamp(16px, 4vw, 22px);
 }
 
-.container__ingredientes {
-    background: #fefefe;
-    margin: 10%;
-    padding: 0 1%;
-}
 
 .container__receita {
+    width: 40%;
+    /* max-width: 100%; */
     background-color: #fefefe;
-    margin: 10%;
     padding: 0 1%;
     border:4px solid var(--preto-letras) ;
     border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
 }
 
+.position {
+    left: 50%;
+    transform: translate(30%);
+}
