@@ -185,3 +185,16 @@ position: absolute;
     left: 50%;
     transform: translate(30%);
 }
+
+.order {
+    font-size: 800;
+}
+.title {
+    font-size: clamp(20px, 6vw, 30px);
+    text-shadow: 2px 2px #3f3737;
+}
+
+b {
+    font-size: clamp(16px, 4vw, 22px);
+    font-weight: 800;
+}
